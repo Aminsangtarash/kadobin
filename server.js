@@ -29,6 +29,11 @@ app.use(
 );
 
 // simple route
+app.post("/sendcode", (req, res) => {
+  
+  res.json({ message: "Welcome to bezkoder application." });
+});
+
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
